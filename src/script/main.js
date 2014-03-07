@@ -1,9 +1,21 @@
 /** @jsx React.DOM */
 
 var React = require("react");
-var Hello = require("./hello");
 
-React.renderComponent(<Hello>Hello from <b>React</b>!</Hello>, document.getElementById("container"), function ()
-{
-    console.info("mounted");
-})
+var Hello = React.createClass({
+    render: function ()
+    {
+        return (
+            <div className="special">
+                <img src="media/react.png"/>
+                Hello { this.props.target }
+            </div>
+        );
+    }
+});
+
+
+React.renderComponent(
+    <Hello target="World!"/>,
+    document.getElementById("container")
+);
