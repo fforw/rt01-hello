@@ -1,7 +1,7 @@
-gulp-react
+React Example 1: Hello World
 ==========
 
-Simple skeleton for an npm-based project setup for React projects based on gulp, browserify and reactify.
+The world famous greeting app implemented in reat.
 
 Prerequisites
 -------------
