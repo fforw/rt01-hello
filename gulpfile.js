@@ -22,7 +22,7 @@ gulp.task('script', function() {
     // Single entry point to browserify
     gulp.src(mainFile)
         .pipe(browserify(browserifyConfig))
-        .pipe(uglify())
+//        .pipe(uglify())
         .pipe(gulp.dest("build"));
 });
 
